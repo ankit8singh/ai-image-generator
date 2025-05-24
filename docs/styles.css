@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #4D6BFE;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #2a2a2a;
+  }
+  
+  /* Input + button layout */
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Input field */
+  input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Main button */
+  button {
+    padding: 0.8rem 1.2rem;
+    background: #4D6BFE;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3c56d9;
+  }
+  
+  /* Loading text */
+  .loading {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #555;
+  }
+  
+  /* Image display */
+  .image-section {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Error message */
+  .error {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  /* Prompt history */
+  .history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .history button {
+    background-color: rgba(77, 107, 254, 0.2);
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .history button:hover {
+    background-color: rgba(77, 107, 254, 0.3);
+  }
+  
+  /* Utility class */
+  .hidden {
+    display: none !important;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .input-section {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
